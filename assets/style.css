@@ -1,5 +1,4 @@
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -44,6 +43,11 @@ header nav ul li {
 }
 
 /* HERO */
-.hero-image {
-    width: %;
+#hero {
+    width: 100%;
+    height: 75%;
+    position: relative;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: ;
 }
