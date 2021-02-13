@@ -1,27 +1,35 @@
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+:root {
+    --color1:#000000; /*black*/
+    --color2: #645864; /*taupe*/
+    --color3: #fff5ee; /*off white*/
+    --color4: #696969; /*grey*/
+}
 body {
-    background-color:rgb(0, 0, 0);
+    background-color:var(--color1);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* HEADER */
 header {
+    background-color: var(--color2);
     width: 100%;
     display: flex;
     flex-wrap:wrap;
     padding: 20px;
-    background-color: #645864;
-    color: #000000;
+    color: var(--color2);
     justify-content: space-between;
 }
 
 header h1 {
     display: inline-block;
     font-size: 48px;
-    color: #dddddd;
+    color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
 header nav {
