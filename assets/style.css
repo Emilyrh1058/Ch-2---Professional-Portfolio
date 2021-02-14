@@ -11,8 +11,8 @@
     --color4: #696969; /*grey*/
 }
 body {
-    background-color:var(--color1);
-    font-family: Arial, Helvetica, sans-serif;
+   /* background-color:var(--color1); */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* HEADER */
@@ -21,16 +21,27 @@ header {
     width: 100%;
     display: flex;
     flex-wrap:wrap;
-    padding: 20px;
-    color: var(--color2);
+    padding: 5px 25px 7px 0;
+    color: var(--color1);
     justify-content: space-between;
 }
 
-header h1 {
+
+header h1 a {
     display: inline-block;
-    font-size: 48px;
-    color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    padding: 10px 15px;
+    font-size: 45px;
+    color: var(--color1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: solid;
+}
+
+header h1 p {
+    display:-webkit-box;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
 
 header nav {
     padding-top: 15px;
@@ -39,6 +50,7 @@ header nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     display: inline;
+    color: var(--color3);
 }
 
 header nav ul {
@@ -51,11 +63,24 @@ header nav ul li {
 }
 
 /* HERO */
-#hero {
-    width: 100%;
-    height: 75%;
+.hero {
     position: relative;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: ;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-declaration {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    width: 25%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2vw;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--color1);
+    color: var(--color2);
 }
