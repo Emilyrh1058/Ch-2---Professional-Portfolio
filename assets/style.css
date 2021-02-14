@@ -52,7 +52,7 @@ header nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     display: inline;
-    color: var(--color3);
+    color: var(--color1);
 }
 
 header nav ul {
@@ -183,15 +183,15 @@ body {
 
 /* HOVER */
 header nav ul li:hover {
-    border-color: var(--color4);
+    border-color: var(--color3);
 }
 header nav ul li:hover > #hover {
-    color: var(--color4);
+    color: var(--color3);
 }
-.work-main a:hover {
+.work-project1 a:hover {
     opacity: 0.8;
 }
-.work-secondary a:hover {
+.work-projects2 a:hover {
     opacity: 0.8;
 }
 .contact-me a:hover {
@@ -207,7 +207,7 @@ header nav ul li:hover > #hover {
         font-size: 28px;
     }
     header nav ul li a {
-        font-size: 18px;
+        font-size: 25px;
     }
     .hero-image {
         height: 300px;
@@ -238,12 +238,15 @@ header nav ul li:hover > #hover {
         padding: 5px 0;
         text-align: center;
     }
+
     header nav {
         width: 100%;
     }
+
     header nav ul {
         justify-content: space-evenly;
     }
+
     .section-title {
         justify-content: center;
         padding-bottom: 5px;
@@ -252,25 +255,27 @@ header nav ul li:hover > #hover {
         font-size: 20px;
         width: 100%;
     }
-    .section-title h2 span {
-        display: inline;
-    }
+
     .right-section {
         border: 0;
         width: 100%;
         margin: 15px 0 0 0;
         padding: 0 20px;
     }
-    .work-main, .work-secondary{
+
+    .work-project1, .work-projects2{
         margin-bottom: 10px;
     }
+
     .image-title h3{
         font-size: 4.0vw;
         line-height: 1.5;
     }
+
     .image-title h4{
         font-size: 2.5vw;
     }
+
     .contact-me a {
         font-size: 14px;
         border-bottom: 2px solid var(--color2);
@@ -281,19 +286,24 @@ header nav ul li:hover > #hover {
     header h1 {
         padding: 0;
     }
+
     header h1 a {
         font-size: 24px;
     }
+
     header nav ul li a {
         font-size: 14px;
     }
+
     header nav {
         margin: 0;
     }
+
     header nav ul li {
         margin: 5px 0;
         border-bottom: 2px solid var(--color1);
     }
+
     .hero-text {
         right: 0;
         bottom: 1%;
@@ -301,28 +311,35 @@ header nav ul li:hover > #hover {
         font-size: 3vw;
         border-radius: 0;
     }
+
     .section-title {
         font-size: 16px;
         border-bottom: 2px solid var(--color2);
     }
+
     .right-section {
         font-size: 12px;
     }
+
     .image-title {
         width: 100%;
         text-align: center;
         border-radius: 0;
     }
+
     .image-title h3{
         font-size: 4.0vw;
         line-height: 1.5;
     }
+
     .image-title h4{
         font-size: 2.5vw;
     }
-    .work-secondary {
+
+    .work-projects2 {
         width: 100%;
     }
+    
     .contact-me a {
         font-size: 10px;
     }
