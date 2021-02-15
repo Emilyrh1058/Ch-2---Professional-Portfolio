@@ -12,12 +12,15 @@
 }
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--color2);
 }
 
 body h2 {
-    color: var(--color2);
+    color: var(--color1);
 }
+
 /* HEADER */
+
 header {
     background-color: var(--color2);
     width: 100%;
@@ -64,52 +67,67 @@ header nav ul li {
     margin-left: 25px;
 }
 
+header nav ul li a {
+    color: var(--color1);
+}
+
+
 /* HERO */
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
+
+.about {
     background-color: var(--color1);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 2.5vw;
 }
 
-.flex-container div {
-    margin: 0px;
-    padding: 0px;
+.profile-pic {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border: 5px solid var(--color3);
 }
 
-/* ABOUT ME */
-body {
-    background-color: var(--color1);
+.about-text {
+    width: 85%;
+    border-left: 5px solid var(--color2);
+    margin: 2.5vw auto;
 }
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+
+.about-text h2 {
+    font-size: 1.5rem;
+}
+
+.about-text p {
+    font-size: 14px;
     color: var(--color2);
 }
 
-.content-text {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 30px 0 0;
-    padding: 0 30px;
-    border-left: 4px solid var(--color2);
-    line-height: 1;
-    font-size: 20px;
-    text-align: justify;
-    width: 75%;
+.about a {
+    text-decoration: none;
+    color: var(--color2);
+    font-weight: bold;
 }
 
-.section-title {
+.about a:hover {
+    color: var(--color4);
+}
+
+.about h2, .about p {
+    padding:  0 10px;
+    color: var(--color2);
+}
+
+.section-title h2 {
     display:flex;
     margin: 20px 20px 0 20px;
     justify-content: flex-end;
     text-align: right;
-    color: var(--color2);
+    color: var(--color1);
     font-size: 28px;
     width: 15%;
 }
@@ -164,16 +182,17 @@ body {
 }
 
 /* CONTACT ME */
+
 .contacts {
-    justify-content: space-evenly;
+    justify-content:space-between;
 }
 .contact-me {
-    display: inline-flex;
-    
+    display: inline;
+    justify-content: space-evenly;
 }
 .contact-me a {
     text-decoration: none;
-    color: var(--color2);
+    color: var(--color1);
     font-size: 24px;
     line-height: 1.5;
     padding: 5px;
@@ -339,7 +358,7 @@ header nav ul li:hover > #hover {
     .work-projects2 {
         width: 100%;
     }
-    
+
     .contact-me a {
         font-size: 10px;
     }
