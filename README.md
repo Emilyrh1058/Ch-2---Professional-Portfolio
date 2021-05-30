@@ -1,4 +1,4 @@
-# Portfolio-2
+# Professional Portfolio
 
 ## Purpose
 An introduction to myself and a showcase of my work.
